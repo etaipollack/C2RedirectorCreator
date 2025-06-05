@@ -3,13 +3,13 @@
 This Python script provides a command-line interface to automate the deployment of a redirector server for sliver, using DigitalOcean droplets.
 
 
-## 3. Prerequisites
+## Prerequisites
 
 * **Python 3.x:** Installed on your local machine.
 * **DigitalOcean Personal Access Token (API Key):** Generate one from your DigitalOcean control panel under "API" -> "Tokens/Keys". Ensure it has read/write access.
 * **SSH Keypair:** You should have an SSH keypair generated on your local machine (e.g., `id_rsa` and `id_rsa.pub` on Linux/macOS, or generated via OpenSSH in PowerShell on Windows). Your public key must be uploaded to your DigitalOcean account.
 
-## 4. Installation
+## Installation
 
 1.  **Clone this repository** (or save the ` .py` script to your desired location).
 2.  **Install the prerequisites:**
@@ -17,7 +17,7 @@ This Python script provides a command-line interface to automate the deployment 
     pip install python-digitalocean
     pip install paramiko
     ```
-## 5. General Usage
+## General Usage
 
 The script uses `argparse` for command-line arguments. The basic syntax is:
 
