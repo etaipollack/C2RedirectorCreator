@@ -27,7 +27,7 @@ python run.py YOUR_DIGITALOCEAN_API_KEY <resource> <action> [optional_arguments]
 
 The basic syntax to create a redirector through a DigitalOcean droplet is
 ```bash
-python redirectorC2setup.py YOUR_DIGITALOCEAN_API_KE droplets create-c2-redirector --ssh_keys SSH_KEY_ID --private-key-path PATH_TO_PRIVATE_KEY --C2-IP IP_OF_C2_SERVER --private-key-passphrase SSH_PRIVATE_KEY_PASSPHRASE
+python redirectorC2setup.py YOUR_DIGITALOCEAN_API_KEY droplets create-c2-redirector --ssh_keys SSH_KEY_ID --private-key-path PATH_TO_PRIVATE_KEY --C2-IP IP_OF_C2_SERVER --private-key-passphrase SSH_PRIVATE_KEY_PASSPHRASE
 ```
 (To get your public ssh key id, first run 
 ```bash
